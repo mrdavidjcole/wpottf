@@ -34,13 +34,22 @@ app.get('/wpol.woff', function (req, res, next) {
   res.sendFile(__dirname + '/wpol.woff', options);
 });
 
-app.get('/robot.woff', function (req, res, next) {
+app.get('/roboto.woff2', function (req, res, next) {
   var options = {
     headers: {
-      'Content-Type': 'font/woff',
+      'Content-Type': 'font/woff2',
     }
   };
-  res.sendFile(__dirname + '/roboto.woff', options);
+  res.sendFile(__dirname + '/roboto.woff2', options);
+});
+
+app.get('/Bluebell.ttf', function (req, res, next) {
+  var options = {
+    headers: {
+      'Content-Type': 'font/ttf',
+    }
+  };
+  res.sendFile(__dirname + '/Bluebell.ttf', options);
 });
 
 // listen for requests :)

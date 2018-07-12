@@ -8,6 +8,11 @@
   font-size: 21px;
 }
 
+.bluebell {
+  font-family: 'Bluebell', serif;
+  font-size: 21px;
+}
+
 @font-face {
   font-family: 'wpol';
   src: url('/wpol.woff');
@@ -17,4 +22,9 @@
 @font-face {
   font-family: 'roboto';
   src: url('/roboto.woff2');
+}
+
+@font-face {
+  font-family: 'Bluebell';
+  src: url('/Bluebell.ttf');
 }
