@@ -1,0 +1,9 @@
+.text {
+  font-family: WistiaPlayerOverpass, serif;
+  font-size: 21px;
+}
+
+@font-face {
+  font-family: 'WistiaPlayerOverpass';
+  src: url('/WistiaPlayerOverpass.ttf'); 
+}
