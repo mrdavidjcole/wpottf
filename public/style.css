@@ -1,9 +1,20 @@
-.text {
-  font-family: WistiaPlayerOverpass, serif;
+.wpol_dot_woff {
+  font-family: 'wpol', serif;
+  font-size: 21px;
+}
+
+.roboto {
+  font-family: 'roboto', serif;
   font-size: 21px;
 }
 
 @font-face {
-  font-family: 'WistiaPlayerOverpass';
-  src: url('/WistiaPlayerOverpass.ttf'); 
+  font-family: 'wpol';
+  src: url('/wpol.woff');
+}
+
+
+@font-face {
+  font-family: 'roboto';
+  src: url('/roboto.woff2');
 }

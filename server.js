@@ -5,7 +5,7 @@
 var express = require('express');
 var app = express();
 
-// we've started you off with Express, 
+// we've started you off with Express,
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
 // http://expressjs.com/en/starter/static-files.html
@@ -17,15 +17,30 @@ app.get('/', function(request, response) {
 });
 
 app.get('/WistiaPlayerOverpass.ttf', function (req, res, next) {
-
   var options = {
     headers: {
-      'Content-Type': 'application/x-font-ttf',
+      'Content-Type': 'font/ttf',
     }
   };
-
   res.sendFile(__dirname + '/WistiaPlayerOverpass.ttf', options);
+});
 
+app.get('/wpol.woff', function (req, res, next) {
+  var options = {
+    headers: {
+      'Content-Type': 'font/woff',
+    }
+  };
+  res.sendFile(__dirname + '/wpol.woff', options);
+});
+
+app.get('/robot.woff', function (req, res, next) {
+  var options = {
+    headers: {
+      'Content-Type': 'font/woff',
+    }
+  };
+  res.sendFile(__dirname + '/roboto.woff', options);
 });
 
 // listen for requests :)
